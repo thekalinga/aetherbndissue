@@ -1,0 +1,12 @@
+-buildpath: \
+	commons-io:commons-io;version=2.4;strategy=exact,\
+	commons-daemon:commons-daemon;version=1.0.1,\
+	${junit}
+	
+-outputmask: ${@bsn}-${version;===S;${@version}}.jar
+Bundle-Version: 0.0.1-SNAPSHOT
+bin: target/classes
+src: src/main/java
+target-dir: target
+testbin: target/test-classes
+testsrc: src/main/test
